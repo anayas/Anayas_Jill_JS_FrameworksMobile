@@ -1,0 +1,198 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+			
+	<!-- JavaScript normally at end of body, except for Modernizr which enables HTML5 elements & feature detects -->
+	
+</head>
+
+<body>
+		<div data-role="page" id="home" >
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>Jill Anayas</h1>
+			</div>
+			<div data-role="content"data-theme="a">
+				<ul data-role="listview" data-inset="false" data-filter="true" data-theme="a">
+					<li><a href="#bio"> 
+						<h3>My Bio</h3>
+						<p>A little about me...</p>
+					</a></li>
+					<li><a href="#contactMe"> 
+						<h3>Contact Me</h3>
+						<p>Say hello!</p>
+					</a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h4>Full Sail University MDD 2012</h4>
+				
+			</div>
+		</div>
+		
+		
+		<div data-role="page" id="bio" data-add-back-btn="true" data-theme="a">
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<h1>Bio</h1>
+			</div>
+			<div data-role="content" data-theme="a">
+				<a href="#home">
+				<h1 id="logo"><img width="145.33" height="36" src="images/jillAnayasWhite.png">
+				</a></h1>			
+					
+					<aside>
+						<img width="73.08" height="95.8" src="images/headshot.jpg" alt="Jill's headshot">
+					</aside>
+					<p>A native of Michigan, Anayas was a competitive swimmer on the USS Team.  When Jillian was 18 she worked as a cross-country semi-truck driver and mover for a national moving company.</p>
+					<p>Anayas moved to Jacksonville, FL at the age of 22, because she was sick of the cold weather. She worked two years as a commercial bank teller with Bank of America, before becoming an international runway and swimsuit model. She signed with model agencies, in London, Malaysia, and China. She has performed in most of China, South Korea, Japan, Tahiti, Costa Rica, Miami and New York City, for fashion week.</p>
+					<p>Anayas was awarded Model of the Year in South Korea, 2005, Global Beauty Queen in China, 2006.</p>
+					<p>While Anayas lived in Jacksonville, she met her beloved husband Marc. They wed in November of 2009, in Saint Augustine, Florida and January 1st, 2010, in Boracay, Philippines. Jillian’s maiden name is Strauss.</p>
+					<p>In 2008 Jillian Anayas had joined the sales team at Adams Cameron & Co., Realtors, in Deland, Florida. She is an active member of the Volusia County Board Of Realtors.</p>
+					<p>Anayas holds an Associate of Arts degree from Florida State College and was awarded the International Scholastic Honor Society PHI THETA KAPPA 2003. In August of 2010, Anayas began pursuing a Bachelor degree in Web Design and Development, at Full Sail University, in Winter Park, Florida.</p>
+					<p>Jill and her husband Marc, are proud parents of their 1st child, Vivienne Audrey Anayas. Born May 1st 2012 at 6:37PM, 7lbs 2oz and 19 inches long.</p>
+					<p>In her spare time, she enjoys hot yoga, swimming, wake boarding, kayaking, landscaping and spending time with her husband and her two Springer Spaniels. She is an outdoors enthusiast. "Her unique life experiences definitely make her an easily relatable person."</p>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="home" >
+				<div data-role="navbar" >
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+			
+		<div data-role="page" id="contactMe" data-add-back-btn="true" data-theme="a">
+			<div data-role="header" data-position="fixed" >
+				<h1>Contact Jill</h1>
+			</div>
+			
+			<div data-role="content">
+				
+				<form action="" method="post" id="contactmeform">
+					<div data-role="fieldcontain">
+						<label for="contactname">Name</label>
+						<input type="text" name="contactname" id="contactname" class="required letter" />
+					</div>
+					<div data-role="fieldcontain">	
+						<label for="yourwebpage">Webpage:</label>
+						<input type="text" name="yourwebpage" id="yourwebpage" />
+					</div>
+					<div data-role="fieldcontain">	
+						<label for="youremail">Email:</label>
+						<input type="text" name="youremail" id="youremail" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="yournote">Your Note:</label>
+						<textarea></textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="developer">Developer? </label>
+						<select data-role="slider">
+							<option value="off">Nope</option>
+							<option value="on">Yep</option>
+						</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup" >
+							<legend>Your Experience:</legend>
+							<input type="radio" value="Beginner" name="level" id="level-1" class="required"/>
+							<label for="level-1">Beginner</label>
+							<input type="radio" value="Advanced" name="level" id="level-2" />
+							<label for="level-2">Advanced</label>
+							<input type="radio" value="Genius" name="level" id="level-3" />
+							<label for="level-3">Genius</label>
+						</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup" >
+							<legend>Familure With:</legend>
+							<input type="checkbox" value="Jquery" name="web-language" id="web-language-1" class="required"/>
+							<label for="web-language-1">JQuery</label>
+							<input type="checkbox" value="Cake" name="web-language" id="web-language-2" />
+							<label for="web-language-2">Cake</label>
+							<input type="checkbox" value="Ruby" name="web-language" id="web-language-3" />
+							<label for="web-language-3">Ruby</label>
+						</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="submit" value="Send" data-theme="b"  />
+						<input type="reset" value="Reset" data-theme="a" />
+					</div>
+							
+							<footer>
+								<section>
+									<ul>
+										<li><a href="https://twitter.com/JillianAnayas"><img width="32" height="32" title="Twitter" alt="Twitter" src="images/twitterSquare.png"></a></li>
+										<li><a href="http://www.linkedin.com/in/jilliananayas"><img width="35" height="35" title="linkedin" alt="Linkedin" src="images/linkedinSquare.png"></a></li>
+										<li><a href="mailto:jillianAnayas@gmail.com"><img width="35" height="40" title="Email Jill Anayas" alt="Email Jill Anayas" src="images/email48x48.png"></a></li>
+										<li class="copyright">Jill Anayas | Full Sail University | Copyright &copy 2012</li>
+									</ul>
+								</section>
+							</footer>
+					<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar" data-theme="a">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					</ul>
+				</div>
+			</div>
+
+					<a href="#note" id="rberrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+					
+				</form>
+				
+			</div><!--/content -->
+		
+		</div><!-- /contact form -->
+		
+		<div data-role="dialog" id="note" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing Fields</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+					
+		
+
+
+
+	
+
+	<!-- JavaScript here -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
