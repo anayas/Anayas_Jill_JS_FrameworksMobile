@@ -1,0 +1,56 @@
+/*  custom styles */
+
+
+label.error{
+  display: block;
+	margin: 10px 0;
+	color: #cc0000;
+}
+#rberrorslink{
+	display: none;
+}
+#cannons .ui-grid-b div{
+	text-align: center;
+}
+#cannons .ui-grid-b .ui-bar{
+	padding: 20px;
+}
+
+
+
+#logo {
+	margin-left: 100px;
+	
+}
+h1 span {
+	font-family:fantasy;
+	font-size: 14px;
+}
+aside {
+	float: right;
+	margin: 0 0 5px 8px;
+	border: solid #FFF 4px;
+}
+p{
+	
+	font-size: 12px;
+	line-height: 20px;
+}
+
+section ul li a{
+	text-decoration: none;
+	text-indent: -2000px;
+
+}
+section ul{
+	list-style: none;
+}
+section ul li{
+	float: right;
+	margin-top: 50px;
+	margin-right: 10px;
+	font-size: 9px;
+	
+	
+	
+}
